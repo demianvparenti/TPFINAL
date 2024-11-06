@@ -34,11 +34,11 @@ l. Debe compilar y ejecutarse sin errores.*/
 #include "include/order.hpp"
 
 int main(){
-    Beef* article1 = new Beef("B001", "Roast Beef", 7159.99, "Corte de Carne");
-    Beef* article2 = new Beef("B002", "Milanesa de Carne", 6000.00, "Preparado");
-    Chicken* article3 = new Chicken("C001", "Pechuga", 4500.50, "Corte de Pollo");
-    Chicken* article4 = new Chicken("C002", "Milanesa de Pollo", 5500.00, "Preparado");
-    Chicken* article5 = new Chicken("C003", "Pata y Muslo", 3700.00, "Corte de Pollo");
+    Animal* article1 = new Beef("B001", "Roast Beef", 7159.99, "Corte de Carne");
+    Animal* article2 = new Beef("B002", "Milanesa de Carne", 6000.00, "Preparado");
+    Animal* article3 = new Chicken("C001", "Pechuga", 4500.50, "Corte de Pollo");
+    Animal* article4 = new Chicken("C002", "Milanesa de Pollo", 5500.00, "Preparado");
+    Animal* article5 = new Chicken("C003", "Pata y Muslo", 3700.00, "Corte de Pollo");
 
     Client* client1 = new Client("mariagomez", "Maria Gomez");
     Client* client2 = new Client("joseperez", "Jose Perez");
@@ -53,9 +53,9 @@ int main(){
     orderclient2->attachOrder(article4);
     orderclient2->attachOrder(article5);
            
-    cout << "*****************" << endl;
-    cout << "MENU DE LA GRANJA" << endl;
-    cout << "*****************" << endl;
+    cout << "*********************************" << endl;
+    cout << "MENU DE LA GRANJA UKELELE CHICKEN" << endl;
+    cout << "*********************************" << endl;
     cout << endl;
     cout << "LISTA DE PEDIDOS:" << endl;
     cout << endl;

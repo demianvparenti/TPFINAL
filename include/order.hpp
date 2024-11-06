@@ -10,7 +10,7 @@ class Order{
 private:
     string id;
     Client* client;
-    Animal* animals[3];  // Arreglo fijo de 20 punteros de tipo Article 
+    Animal* animals[3];  // Arreglo fijo de 3 punteros de tipo Article 
     int animalQty;        // Cantidad de articulos, variable que controlara el tamaño del arreglo
 
 public:
